@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="slider">
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="text-center mt-3 border-bottom">Tienda de Deportes</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="card  col col-lg-2 col-md-6 col-12 m-2 sinBordes shadow p-3 mb-5 bg-body rounded" id="#cardnegro" ">
+                <img src="img/1.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title sudtitulo_n">Kit pesa</h5>
+                    <p class="card-text">Precio unidad: $110000</p>
+                    <div class="mb-3">
+                        <label for="producto1" class="form-label">ingrese cantidad de productos</label>
+                        <input type="number" class="form-control" id="producto1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="row d-flex justify-content-center"">
+                        <button type="button" onclick="producto1()" class="button mb-1"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Añadir </span>
+                        <button type="button" onclick="producto1Eliminar()" class="button"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Eliminar </span>
+                    </div>
+                    </button>
+                </div>
+            </div>
+            <div class="card col col-lg-2 col-md-6 col-12 m-2 sinBordes shadow p-3 mb-5 bg-body rounded" id="#cardnegro1" ">
+                <img src="img/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title sudtitulo_n">pesas de 2kg</h5>
+                    <p class="card-text">Precio unidad: $160000</p>
+                    <div class="mb-3">
+                        <label for="producto2" class="form-label">ingrese cantidad de productos</label>
+                        <input type="number" class="form-control" id="producto2" aria-describedby="emailHelp">
+                    </div>
+                    <div class="row d-flex justify-content-center"">
+                        <button type="button" onclick="producto2()" class="button mb-1"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Añadir </span>
+                        <button type="button" onclick="producto2Eliminar()" class="button"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Eliminar </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card col col-lg-2 col-md-6  col-12 m-2 sinBordes shadow p-3 mb-5 bg-body rounded" id="#cardnegro2" ">
+                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title sudtitulo_n">Pesa rusa</h5>
+                    <p class="card-text">Precio unidad: $230000</p>
+                    <div class="mb-3">
+                        <label for="producto3" class="form-label">ingrese cantidad de productos</label>
+                        <input type="number" class="form-control" id="producto3" aria-describedby="emailHelp">
+                    </div>
+                    <div class="row d-flex justify-content-center"">
+                        <button type="button" onclick="producto3()" class="button mb-1"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Añadir </span>
+                        <button type="button" onclick="producto3Eliminar()" class="button"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Eliminar </span>
+                    </div>
+                    </div>
+            </div>
+            <div class="card col col-lg-2 col-md-6 col-12 m-2 sinBordes shadow p-3 mb-5 bg-body rounded" id="#cardnegro3" ">
+                <img src="img/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title sudtitulo_n">Discos</h5>
+                    <p class="card-text">Precio unidad: $250000</p>
+                    <div class="mb-3">
+                        <label for="producto4" class="form-label">ingrese cantidad de productos</label>
+                        <input type="number" class="form-control" id="producto4" aria-describedby="emailHelp">
+                    </div>
+                    <div class="row d-flex justify-content-center"">
+                        <button type="button" onclick="producto4()" class="button mb-1"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Añadir </span>
+                        <button type="button" onclick="producto4Eliminar()" class="button"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Eliminar </span>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-6 mx-auto mt-5 mb-3">
+            <table class="table border  text-center table-hover table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">cantidades</th>
+                    <th scope="col">producto</th>
+                    <th scope="col">valor unidad</th>
+                    <th scope="col">monto </th>
+                  </tr>
+                </thead>
+                <tbody class="border">
+                  <tr class="border">
+                    <td id="cantidad1"></td>
+                    <td>kit pesa</td>
+                    <td>110000</td>
+                    <td id="cantidad1Monto"></td>
+                  </tr>
+                  <tr class="border">
+                    <td id="cantidad2"></td>
+                    <td>pesas de 2kg</td>
+                    <td>160000</td>
+                    <td id="cantidad2Monto"></td>
+                  </tr>
+                  <tr class="border ">
+                    <td id="cantidad3"></td>
+                    <td>pesa Rusa</td>
+                    <td>230000</td>
+                    <td id="cantidad3Monto"></td>
+                  </tr>
+                  <tr class="border">
+                    <td id="cantidad4"></td>
+                    <td>discos</td>
+                    <td>250000</td>
+                    <td id="cantidad4Monto"></td>
+                  </tr>
+                  <tr class="border ">
+                    <td id="montoTotal" colspan="6">total a pagar: </td>
+                  </tr>
+                </tbody>
+              </table>
+                <button type="button" class="button" onclick="factura()" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i>Comprar</span>   
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">factura</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="factura" class="modal-body">
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-bs-dismiss="modal" aria-label="Close" class="button"  data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-door-closed"></i>cerrar</span>
+                  </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
